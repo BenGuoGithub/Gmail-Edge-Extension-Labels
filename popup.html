@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gmail Labels</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    #selected-labels {
+      margin-bottom: 10px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      min-height: 20px;
+      word-wrap: break-word;
+      background-color: #f9f9f9;
+    }
+    #labels {
+      list-style: none;
+      padding: 0;
+    }
+    .label-item {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      border-bottom: 1px solid #eee;
+    }
+    .label-item input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    #refresh {
+      margin-top: 10px;
+      padding: 5px 10px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+    #refresh:hover {
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <h2>Gmail Labels</h2>
+  <div id="selected-labels">Selected: None</div>
+  <ul id="labels"></ul>
+  <button id="refresh">Refresh</button>
+  <script src="popup.js"></script>
+</body>
+</html>
